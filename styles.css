@@ -10,15 +10,16 @@
 }
 
 .title {
-  color: orangered;
+  color: rgb(53, 120, 158);
   text-align: center;
-  padding: 1em 0 1em 0;
+  padding: 1em 0 0.5em 0;
   font-size: 3em;
 }
 
 .subtitle {
   padding-bottom: 2em;
   margin-left: 2em;
+  text-align: center;
 }
 
 article {
@@ -26,4 +27,31 @@ article {
   flex-direction: column;
   width: 640px;
   margin-bottom: 2em;
+}
+
+article:first-of-type {
+  background-color: rgba(51, 39, 184, 0.3);
+}
+
+div.content {
+  display: flex;
+  height: 970px;
+  flex-flow: column wrap;
+}
+
+div.sidebar {
+  width: 300px;
+  text-align: justify;
+  align-self: flex-start;
+
+}
+
+.about,
+.all_posts,
+.contact {
+  display: block;
+  text-align: end;
+  padding: 1em 0 0 0;
+  text-decoration: none;
+  text-transform: uppercase;
 }
