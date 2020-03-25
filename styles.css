@@ -32,7 +32,7 @@ div.articles {
   flex-basis: 800px;
   height: 1000px;
   flex-flow: column wrap;
-  justify-content: start;
+  justify-content: flex-start;
   align-content: space-evenly;
 }
 
@@ -41,6 +41,7 @@ article {
   flex-direction: column;
   width: 240px;
   margin-bottom: 2em;
+  justify-content: center;
 }
 
 article:first-of-type {
@@ -70,7 +71,16 @@ hr {
   border: 3px solid darkblue;
 }
 
-@media and screen (max-width: 1060px; ) {
+@media screen and (max-width: 1060px) {
 
-  .wrapper {}
+  .div.articles {
+    display: flex;
+    height: 2000px;
+    /* flex-basis: 600px; */
+  }
+
+  .wrapper {
+    width: 760px;
+    margin: 0 auto;
+  }
 }
