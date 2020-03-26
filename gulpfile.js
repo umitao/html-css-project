@@ -34,7 +34,7 @@ gulp.task("styles", () =>
     .src("styles.css")
     .pipe(
       autoprefixer({
-        cascade: false
+        cascade: true
       })
     )
     .pipe(gulp.dest("style"))
